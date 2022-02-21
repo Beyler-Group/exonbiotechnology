@@ -240,6 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;
+  
 }
 
 @media (max-width: 991px) {
@@ -316,7 +317,14 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
+.bi-list{
+  position:fixed;
+  right:20px;
+  top:50px;
+  width:50px;
+  height:30px;
+  size: 80%;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -988,7 +996,12 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
-
+.carousel-control-next-icon {
+background-color: rgb(183, 248, 61);
+}
+.carousel-control-prev-icon{
+  background-color:rgb(183, 248, 61);
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
