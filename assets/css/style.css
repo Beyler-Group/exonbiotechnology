@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
 }
 .navbar-mobile .dropdown ul a i {
-  font-size: 12px;
+  font-size: 15px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
   color: #5cb874;
@@ -317,14 +317,16 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-.bi-list{
+.navbar-toggler-icon{
   position:fixed;
   right:20px;
   top:50px;
   width:50px;
-  height:30px;
-  size: 80%;
+  /* height:30px;
+  size: 200px; */
 }
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1024,6 +1026,9 @@ background-color: rgb(183, 248, 61);
 }
 .carousel-control-prev-icon{
   background-color:rgb(183, 248, 61);
+}
+#carouselExampleIndicators .carousel-inner{
+  width: 100%;
 }
 /*--------------------------------------------------------------
 # Contact
