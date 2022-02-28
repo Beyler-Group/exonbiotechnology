@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 35px;
   }
 }
 @media (min-width: 1024px) {
@@ -979,7 +979,7 @@ section {
 --------------------------------------------------------------*/
 /* 
 style for teams members on desktop */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   h2 { font-size: 2.2em; }
   .index__desktopView{
     display:unset !important; 
@@ -990,7 +990,7 @@ style for teams members on desktop */
 }
 
 /* style for teams members on mobile */
-@media only screen and (max-device-width: 600px) {
+@media (max-device-width: 600px) {
   h2 { font-size: 2.2em; }
   .index__desktopView{
     display: none !important;
