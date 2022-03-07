@@ -16,7 +16,7 @@
   <link href="assets/img/logo.jpg" rel="icon">
   <link href="assets/img/logo.jpg" rel="Officesle-touch-icon">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts --> 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -33,6 +33,37 @@
 </head>
 
 <body>
+
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "103224082297643");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v13.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center mb-3">
@@ -237,115 +268,273 @@
         <div class="row no-gutters">
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>01</span>
-            <h4>COVID 19 Test Kits</h4>
-            <p>The EXON PCR test for COVID-19 is an accurate and reliable test for diagnosing COVID-19.
-            </p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/COVID19-flu.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">EXON PCR COVID 19 Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">The  for COVID-19 is an accurate and reliable test for diagnosing COVID-19.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>02</span>
-            <h4>Covid variant detection Test Kits</h4>
-            <p>This detects the varient type and targents multiple varients.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/sars-cov.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Covid variant detection Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Detects the varient type and targents multiple varients.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>03</span>
-            <h4>Influenza A/B Test Kits</h4>
-            <p>Targets IAV(H1N1&H3N2) and IBV using extracted RNA.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/influenzaA_B.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Influenza A/B Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Targets IAV(H1N1&H3N2) and IBV using extracted RNA.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>04</span>
-            <h4>Covid 19 & Flu A/B Test Kits</h4>
-            <p>Targets IAV(H1N1&H3N2) and IBV in addition to covid 19.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/COVID19-flu.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Covid 19 & Flu A/B Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Targets IAV(H1N1&H3N2) and IBV in addition to covid 19.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>05</span>
-            <h4>Human Papilloma Virus Test Kits</h4>
-            <p>A range of at-home HPV Tests.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/herpesVirus(1).jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Human Papilloma Virus Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">A range of at-home HPV Tests.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>06</span>
-            <h4>Malaria Test Kits</h4>
-            <p>Very sensitive and specific for detecting malaria parasites.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/Malaria.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Malaria Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Very sensitive and specific for detecting malaria parasites.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
           <div class="col-lg-4 col-md-6 content-item">
-            <span>07</span>
-            <h4>HIV Test Kits</h4>
-            <p>It targets LTR region of HIV to diagnose the virus' genotype from A to G.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>08</span>
-            <h4>Hepatitis B&C Test Kits</h4>
-            <p>These Kits target UTR region of hepatitis B or C virus.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>09</span>
-            <h4>Hemorrhagic Congo Fever Test Kits</h4>
-            <p>This kit is designed for detection of Crimean-Congo hemorrhagic Fever Virus.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>10</span>
-            <h4>Tuberculosis Test Kits</h4>
-            <p>Qualitative detection of mycobacterium tuberculosis bacterial DNA.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>11</span>
-            <h4>Yellow Fever test Kits</h4>
-            <p>Detects YFV-Env IgM in Human serum or plasma. </p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/HIV.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">HIV Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Targets LTR region of HIV to diagnose the virus' genotype from A to G.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>12</span>
-            <h4>Dengue Virus(type 1-4) test Kits</h4>
-            <p>Detection of all four Dengue Virus Types 1,2,3,4.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/HBV-HCV.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Hepatitis B&C Test Kits</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Target UTR region of hepatitis B or C virus.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>13</span>
-            <h4>Zika Virus test Kits</h4>
-            <p>Utilizes reverse-transcriptase (RT) reaction to convert RNA into
-              complementary DNA (cDNA).
-            </p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/HCV.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Hemorrhagic Congo Fever Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Designed for detection of Crimean-Congo hemorrhagic Fever Virus.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>14</span>
-            <h4>Herpes Virus test Kits</h4>
-            <p>Detection and differentiation of both types of Herpes simplex viruses (HSV-1 and HSV-2) </p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/tuberculosis.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Tuberculosis Test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Qualitative detection of mycobacterium tuberculosis bacterial DNA.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>15</span>
-            <h4>SMA test Kits</h4>
-            <p>R
-              Rapid, robust, and reliable for the quantification of SMN1 and SMN2 exon.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/influenzaA_B.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Yellow Fever test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Detects YFV-Env IgM in Human serum or plasma.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>16</span>
-            <h4>Ebola test Kits</h4>
-            <p>Presumptive detection of RNA from Ebolavirus from plasma specimens.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/herpesVirus(1).jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Dengue Virus(type 1-4) test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Detection of all four Dengue Virus Types 1,2,3,4.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>17</span>
-            <h4>Rift Valley Fever test Kits</h4>
-            <p>Detection of anti-Rift Valley Fever (RVF) antibodies from multiples species.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/sarsCov2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Zika Virus test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Utilizes reverse-transcriptase (RT) reaction to convert RNA into
+                  complementary DNA (cDNA).</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
-            <span>18</span>
-            <h4>Parainfluenza test Kits</h4>
-            <p>Qualitative detection of human parainfluenza virus (PIV) specific RNA of the 
-              PIV species 1, 2, 3 and 4.</p>
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/herpesVirus.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Herpes Virus test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Detection and differentiation of both types of Herpes simplex viruses (HSV-1 and HSV-2)</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/SMA.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">SMA test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Rapid, robust, and reliable for the quantification of SMN1 and SMN2 exon.</p>
+              </div>
+            </div>
+            <!--end card-->
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/sarsCov2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Ebola test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Presumptive detection of RNA from Ebolavirus from plasma specimens.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/HCV.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Rift Valley Fever test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Detection of anti-Rift Valley Fever (RVF) antibodies from multiples species.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
+          </div>
+
+          <div class="col-lg-4 col-md-6 content-item">
+            <!--new card-->
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="assets/img/kits/influenzaA_b(2).jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-text" style="color: rgb(58, 99, 58);">Parainfluenza test Kit</h4>
+               </div>
+              <div class="card-body" style=" background-color:rgb(58, 99, 58)">
+                <p class="card-text">Qualitative detection of human parainfluenza virus (PIV) specific RNA of the 
+                  PIV species 1, 2, 3 and 4.</p>
+              </p>
+              </div>
+            </div>
+            <!--end card-->
           </div>
 
 
@@ -366,24 +555,28 @@
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+
             <span>02</span>
             <h4>COV-2 IgM/IgG Ab Test Kits</h4>
             <p>Collecting a sample from each nostril.Use Tests only as directed.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>03</span>
             <h4>Malaria Test Kits</h4>
             <p>Detects malaria parasites in a patient's blood.Very accurate.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>04</span>
             <h4>Anti HIV 1/2 Test Kits</h4>
             <p>Test looks for HIV infection in your blood or saliva.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>05</span>
             <h4>Tuberculosis Test Kits</h4>
             <p>Qualitative in-vitro detection of antibody to mycobacterium
@@ -391,11 +584,13 @@
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>06</span>
             <h4>Anti HCV Test Kits</h4>
             <p>Qualitatively detects for the presence of Hepatitis C Virus.</p>
           </div>
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>07</span>
             <h4>HBs Ag Test Kits</h4>
             <p>Lateral flow chromatographic immunoassay for the qualitative detection of hepatitis B 
@@ -404,30 +599,35 @@
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>08</span>
             <h4>Anti HBs (HBsAb) Test Kits</h4>
             <p>Lateral flow chromatographic immunoassay for the qualitative detection of hepatitis B surface antibody (HBsAb).</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>09</span>
             <h4>Rotavirus Adenovirus Test Kits</h4>
             <p>Qualitatively detects for the presence of Rotavirus and Adenovirus.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+           
             <span>10</span>
             <h4>H.Pylori Ag Test Kits</h4>
             <p>A lateral flow chromatographic immunoassay for qualitative detection of H. pylori antigen.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+     
             <span>11</span>
             <h4>H.Pylori Ab Test Kits</h4>
             <p>Qualitatively detects for the presence of H. pylori antibodies.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
+   
             <span>12</span>
             <h4>Dengue IgG/IgM Test Kits</h4>
             <p>A rapid immunochromatographic assay for the qualitative detection of NS1 antigen of Dengue virus.</p>
